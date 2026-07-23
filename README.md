@@ -29,7 +29,7 @@ Accessibility Agent uses OpenAI's Codex to automatically analyze web pages and g
 - **Web Scraping**: Cheerio for HTML parsing
 - **Deployment**: Vercel
 
-## 📋 Setup Instructions
+## 📋 Quick Start
 
 1. Clone the repository:
 ```bash
@@ -44,7 +44,8 @@ npm install
 
 3. Create a `.env.local` file with your OpenAI API key:
 ```bash
-OPENAI_API_KEY=your_openai_api_key_here
+cp .env.example .env.local
+# Edit .env.local and add your OpenAI API key
 ```
 
 4. Run the development server:
@@ -54,11 +55,19 @@ npm run dev
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+For detailed deployment instructions, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
+
 ## 🎯 Hackathon Submission
 
 - **Theme**: Theme 8 - AI for Societal Good
 - **Track**: Accessibility agents (alt-text, ARIA, captions)
 - **Built with**: OpenAI Codex demonstrating genuine agentic usage
+- **Deadline**: 3rd August 2026
+
+## 📚 Documentation
+
+- [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) - Complete deployment and submission instructions
+- [SETUP.md](SETUP.md) - Local development setup instructions
 
 ## 🌟 Impact
 
