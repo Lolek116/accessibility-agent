@@ -1,12 +1,14 @@
 {
   "name": "accessibility-agent",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "AI-powered web accessibility improvement tool for ChatGPT CODEX INDIA HACKATHON 2026",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/cheerio": "^0.22.35",
