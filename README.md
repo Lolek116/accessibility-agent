@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ♿ Accessibility Agent
 
-## Getting Started
+An AI-powered web accessibility improvement tool built for the ChatGPT CODEX INDIA HACKATHON 2026 (Theme 8: AI for Societal Good).
 
-First, run the development server:
+## 🎯 Problem Statement
 
+Web accessibility remains a significant challenge, with millions of websites lacking proper alt text for images, ARIA labels for interactive elements, and other accessibility features. This creates barriers for users with disabilities to access digital content and services.
+
+## 💡 Solution
+
+Accessibility Agent uses OpenAI's Codex to automatically analyze web pages and generate:
+- **Descriptive alt text** for images without proper accessibility labels
+- **ARIA labels** for interactive elements (buttons, links, forms)
+- **Improved HTML** that can be downloaded and implemented
+
+## 🚀 Features
+
+- **URL Analysis**: Simply enter a URL to analyze its accessibility
+- **AI-Powered Suggestions**: Uses GPT-4o to generate contextual accessibility improvements
+- **Before/After Comparison**: See original content vs. AI-suggested improvements
+- **Export Functionality**: Download improved HTML for immediate implementation
+- **Demo Mode**: Test the tool with sample data without an API key
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 16 with TypeScript
+- **Styling**: Tailwind CSS
+- **AI Integration**: OpenAI GPT-4o API
+- **Web Scraping**: Cheerio for HTML parsing
+- **Deployment**: Vercel
+
+## 📋 Setup Instructions
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd accessibility-agent
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Create a `.env.local` file with your OpenAI API key:
+```bash
+OPENAI_API_KEY=your_openai_api_key_here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Hackathon Submission
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Theme**: Theme 8 - AI for Societal Good
+- **Track**: Accessibility agents (alt-text, ARIA, captions)
+- **Built with**: OpenAI Codex demonstrating genuine agentic usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌟 Impact
 
-## Deploy on Vercel
+This tool helps make the web more accessible by:
+- Reducing the manual effort required to add accessibility features
+- Providing contextual, intelligent suggestions for improvements
+- Enabling developers and content creators to implement accessibility quickly
+- Supporting compliance with WCAG guidelines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License - feel free to use and modify for your accessibility initiatives.
