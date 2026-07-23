@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     // Extract interactive elements
     const interactive: any[] = [];
     $('button, a, input, select, textarea').each((index, element) => {
-      const tag = element.tagName;
+      const tag = (element as any).tagName || (element as any).name || 'unknown';
       const ariaLabel = $(element).attr('aria-label');
       const text = $(element).text().trim().substring(0, 100);
       
