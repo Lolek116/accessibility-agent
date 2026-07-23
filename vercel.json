@@ -1,10 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
-  "framework": "nextjs",
-  "env": {
-    "OPENAI_API_KEY": {
-      "description": "OpenAI API key for GPT-4o integration"
-    }
-  }
+  "framework": "nextjs"
 }
